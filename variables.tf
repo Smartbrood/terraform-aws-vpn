@@ -1,8 +1,8 @@
-variable "vpc_id"{
+variable "vpc_id" {
   description = "VPC ID"
 }
 
-variable "cgw_ip"{
+variable "cgw_ip" {
   description = "Customer gateway ip"
 }
 
@@ -11,14 +11,19 @@ variable "bgp_asn" {
   default     = "65000"
 }
 
-variable "type"{
+variable "type" {
   description = "VPN type"
   default     = "ipsec.1"
 }
 
-variable "static_routes_only"{
+variable "static_routes_only" {
   description = "Enable static routes only"
   default     = "false"
+}
+
+variable "tags" {
+  type = "map"
+  description = "Tags for VPN resources"
 }
 
 
