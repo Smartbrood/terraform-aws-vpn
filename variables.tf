@@ -1,3 +1,8 @@
+variable "vpn_enabled" {
+  description = "For ability to disable VPN creation in upper level modules. It seems modules doesn't support count parameter for now"
+  default     = "true"
+}
+
 variable "vpc_id" {
   description = "VPC ID"
 }
