@@ -7,8 +7,12 @@ variable "vpc_id" {
   description = "VPC ID"
 }
 
-variable "cgw_ip" {
-  description = "Customer gateway ip"
+variable "cgw_ip_1" {
+  description = "Primary customer gateway ip"
+}
+
+variable "cgw_ip_2" {
+  description = "Secondary customer gateway ip"
 }
 
 variable "bgp_asn" {
